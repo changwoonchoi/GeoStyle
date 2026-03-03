@@ -29,6 +29,15 @@
     <!-- Academicons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
     <link rel="icon" href="./assets/favicon.svg">
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -184,8 +193,49 @@
             Results
           </h2>
         </div>
-        
-        
+
+        <!-- Example selector tabs -->
+        <div id="example-tabs" class="tabs is-toggle is-centered is-fullwidth is-small" style="margin-bottom: 10px;">
+          <ul>
+            <!-- Populated by JS -->
+          </ul>
+        </div>
+
+        <p class="is-size-7 has-text-grey has-text-centered" style="margin-bottom: 15px;">
+          <span class="icon is-small"><i class="fas fa-info-circle"></i></span>
+          Drag to rotate · Scroll to zoom · Meshes may take a few seconds to load
+        </p>
+
+        <!-- Three-column viewer -->
+        <div class="columns is-vcentered is-centered viewer-row">
+          <!-- Source Mesh -->
+          <div class="column is-4 has-text-centered">
+            <h4 class="viewer-label">Source Mesh</h4>
+            <div class="box viewer-box">
+              <div id="viewer-source" class="viewer-canvas"></div>
+            </div>
+          </div>
+          <!-- Style Image -->
+          <div class="column is-4 has-text-centered">
+            <h4 class="viewer-label">Style Image</h4>
+            <div class="box viewer-box">
+              <img id="style-image" class="style-image-display" src="" alt="Style reference">
+            </div>
+          </div>
+          <!-- Deformed Mesh -->
+          <div class="column is-4 has-text-centered">
+            <h4 class="viewer-label">Deformed Mesh</h4>
+            <div class="box viewer-box">
+              <div id="viewer-deformed" class="viewer-canvas"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Loading overlay -->
+        <div id="results-loading" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.6); z-index: 999; align-items: center; justify-content: center;">
+          <span class="icon is-large"><i class="fas fa-spinner fa-pulse fa-2x"></i></span>
+        </div>
+
       </div>
     </section>
 
@@ -240,6 +290,9 @@
         </p>
       </div>
     </footer>
+
+    <!-- Interactive 3D Results -->
+    <script type="module" src="./js/interactive_results.js"></script>
   </body>
 
 </html>
