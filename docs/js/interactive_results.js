@@ -21,6 +21,24 @@ const EXAMPLES = [
     style: './assets/results/style_images/hydrant.jpg',
     deformed: './assets/results/deformed_meshes/ours/homer_hydrant.obj',
   },
+  {
+    name: 'Eiffel Tower',
+    source: './assets/results/source_meshes/eiffel_tower.obj',
+    style: './assets/results/style_images/stones.png',
+    deformed: './assets/results/deformed_meshes/ours/eiffel_tower_stones.obj',
+  },
+  {
+    name: 'Crab',
+    source: './assets/results/source_meshes/crab.obj',
+    style: './assets/results/style_images/koons.jpg',
+    deformed: './assets/results/deformed_meshes/ours/crab_koons.obj',
+  },
+  {
+    name: 'Big Ben',
+    source: './assets/results/source_meshes/bigben.obj',
+    style: './assets/results/style_images/brancusi.png',
+    deformed: './assets/results/deformed_meshes/ours/bigben_brancusi.obj',
+  }
 ];
 
 // ─── DOM ─────────────────────────────────────────────────────────
