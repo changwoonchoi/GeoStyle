@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'FreightSansProBlack';
+    src: url('FreightSansProBlack-Regular.eot');
+    src: local('FreightSans Pro Black'), local('FreightSansProBlack-Regular'),
+        url('FreightSansProBlack-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FreightSansProBlack-Regular.woff2') format('woff2'),
+        url('FreightSansProBlack-Regular.woff') format('woff'),
+        url('FreightSansProBlack-Regular.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreightSansProBlack';
+    src: url('FreightSansProBlack-Italic.eot');
+    src: local('FreightSans Pro Black Italic'), local('FreightSansProBlack-Italic'),
+        url('FreightSansProBlack-Italic.eot?#iefix') format('embedded-opentype'),
+        url('FreightSansProBlack-Italic.woff2') format('woff2'),
+        url('FreightSansProBlack-Italic.woff') format('woff'),
+        url('FreightSansProBlack-Italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FreightSansProBold';
+    src: url('FreightSansProBold-Regular.eot');
+    src: local('FreightSans Pro Bold'), local('FreightSansProBold-Regular'),
+        url('FreightSansProBold-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FreightSansProBold-Regular.woff2') format('woff2'),
+        url('FreightSansProBold-Regular.woff') format('woff'),
+        url('FreightSansProBold-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreightSansProLight';
+    src: url('FreightSansProLight-Regular.eot');
+    src: local('FreightSans Pro Light'), local('FreightSansProLight-Regular'),
+        url('FreightSansProLight-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FreightSansProLight-Regular.woff2') format('woff2'),
+        url('FreightSansProLight-Regular.woff') format('woff'),
+        url('FreightSansProLight-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreightSansProBook';
+    src: url('FreightSansProBook-Regular.eot');
+    src: local('FreightSans Pro Book'), local('FreightSansProBook-Regular'),
+        url('FreightSansProBook-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FreightSansProBook-Regular.woff2') format('woff2'),
+        url('FreightSansProBook-Regular.woff') format('woff'),
+        url('FreightSansProBook-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreightSansProBook';
+    src: url('FreightSansProBook-Italic.eot');
+    src: local('FreightSans Pro Book Italic'), local('FreightSansProBook-Italic'),
+        url('FreightSansProBook-Italic.eot?#iefix') format('embedded-opentype'),
+        url('FreightSansProBook-Italic.woff2') format('woff2'),
+        url('FreightSansProBook-Italic.woff') format('woff'),
+        url('FreightSansProBook-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FreightSansProLight';
+    src: url('FreightSansProLight-Italic.eot');
+    src: local('FreightSans Pro Light Italic'), local('FreightSansProLight-Italic'),
+        url('FreightSansProLight-Italic.eot?#iefix') format('embedded-opentype'),
+        url('FreightSansProLight-Italic.woff2') format('woff2'),
+        url('FreightSansProLight-Italic.woff') format('woff'),
+        url('FreightSansProLight-Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FreightSansProMedium';
+    src: url('FreightSansProMedium-Italic.eot');
+    src: local('FreightSans Pro Medium Italic'), local('FreightSansProMedium-Italic'),
+        url('FreightSansProMedium-Italic.eot?#iefix') format('embedded-opentype'),
+        url('FreightSansProMedium-Italic.woff2') format('woff2'),
+        url('FreightSansProMedium-Italic.woff') format('woff'),
+        url('FreightSansProMedium-Italic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FreightSansProSemibold';
+    src: url('FreightSansProSemibold-Italic.eot');
+    src: local('FreightSans Pro Semibold Italic'), local('FreightSansProSemibold-Italic'),
+        url('FreightSansProSemibold-Italic.eot?#iefix') format('embedded-opentype'),
+        url('FreightSansProSemibold-Italic.woff2') format('woff2'),
+        url('FreightSansProSemibold-Italic.woff') format('woff'),
+        url('FreightSansProSemibold-Italic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FreightSansProBold';
+    src: url('FreightSansProBold-Italic.eot');
+    src: local('FreightSans Pro Bold Italic'), local('FreightSansProBold-Italic'),
+        url('FreightSansProBold-Italic.eot?#iefix') format('embedded-opentype'),
+        url('FreightSansProBold-Italic.woff2') format('woff2'),
+        url('FreightSansProBold-Italic.woff') format('woff'),
+        url('FreightSansProBold-Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FreightSansProSemibold';
+    src: url('FreightSansProSemibold-Regular.eot');
+    src: local('FreightSans Pro Semibold'), local('FreightSansProSemibold-Regular'),
+        url('FreightSansProSemibold-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FreightSansProSemibold-Regular.woff2') format('woff2'),
+        url('FreightSansProSemibold-Regular.woff') format('woff'),
+        url('FreightSansProSemibold-Regular.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreightSansProMedium';
+    src: url('FreightSansProMedium-Regular.eot');
+    src: local('FreightSans Pro Medium'), local('FreightSansProMedium-Regular'),
+        url('FreightSansProMedium-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FreightSansProMedium-Regular.woff2') format('woff2'),
+        url('FreightSansProMedium-Regular.woff') format('woff'),
+        url('FreightSansProMedium-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
