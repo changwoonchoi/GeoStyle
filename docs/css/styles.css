@@ -1,3 +1,101 @@
+/* ── Freight Sans Pro font faces ── */
+@font-face {
+  font-family: 'FreightSansPro';
+  src: url('../assets/fonts/Freight/FreightSansProLight-Regular.woff2') format('woff2'),
+       url('../assets/fonts/Freight/FreightSansProLight-Regular.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FreightSansPro';
+  src: url('../assets/fonts/Freight/FreightSansProLight-Italic.woff2') format('woff2'),
+       url('../assets/fonts/Freight/FreightSansProLight-Italic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FreightSansPro';
+  src: url('../assets/fonts/Freight/FreightSansProBook-Regular.woff2') format('woff2'),
+       url('../assets/fonts/Freight/FreightSansProBook-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FreightSansPro';
+  src: url('../assets/fonts/Freight/FreightSansProBook-Italic.woff2') format('woff2'),
+       url('../assets/fonts/Freight/FreightSansProBook-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FreightSansPro';
+  src: url('../assets/fonts/Freight/FreightSansProMedium-Regular.woff2') format('woff2'),
+       url('../assets/fonts/Freight/FreightSansProMedium-Regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FreightSansPro';
+  src: url('../assets/fonts/Freight/FreightSansProMedium-Italic.woff2') format('woff2'),
+       url('../assets/fonts/Freight/FreightSansProMedium-Italic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FreightSansPro';
+  src: url('../assets/fonts/Freight/FreightSansProSemibold-Regular.woff2') format('woff2'),
+       url('../assets/fonts/Freight/FreightSansProSemibold-Regular.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FreightSansPro';
+  src: url('../assets/fonts/Freight/FreightSansProSemibold-Italic.woff2') format('woff2'),
+       url('../assets/fonts/Freight/FreightSansProSemibold-Italic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FreightSansPro';
+  src: url('../assets/fonts/Freight/FreightSansProBold-Regular.woff2') format('woff2'),
+       url('../assets/fonts/Freight/FreightSansProBold-Regular.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FreightSansPro';
+  src: url('../assets/fonts/Freight/FreightSansProBold-Italic.woff2') format('woff2'),
+       url('../assets/fonts/Freight/FreightSansProBold-Italic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FreightSansPro';
+  src: url('../assets/fonts/Freight/FreightSansProBlack-Regular.woff2') format('woff2'),
+       url('../assets/fonts/Freight/FreightSansProBlack-Regular.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FreightSansPro';
+  src: url('../assets/fonts/Freight/FreightSansProBlack-Italic.woff2') format('woff2'),
+       url('../assets/fonts/Freight/FreightSansProBlack-Italic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
 .navbar.logo {
   margin-top: 2.5rem;
 }
@@ -20,17 +118,31 @@
 }
 
 .publication-title {
-  font-family: 'Outfit';
-  font-weight: 1000;
+  /* font-family: 'Outfit'; 
+  font-weight: 1000;*/
+  font-family: 'FreightSansPro';
+  font-weight: 600;
 }
 
 .publication-authors {
-  font-family: 'Quicksand';
-  font-weight: 500;
+  /*font-family: 'Quicksand';
+  font-weight: 500;*/
+  font-family: 'FreightSansPro';
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .publication-institute {
+  /*font-family: 'Quicksand';
+  font-weight: 400;*/
+  font-family: 'FreightSansPro';
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.publication-journal {
   font-family: 'Quicksand';
+  font-size: 24px;
   font-weight: 400;
 }
 
@@ -40,11 +152,12 @@
 }
 
 .content{
-  font-family: 'Inter';
+  font-family: 'FreightSansPro', 'Inter', sans-serif;
+  font-weight: 400;
 }
 
 .lab-logo img{
-  max-height: 50px;
+  max-height: 60px;
 
 }
 
@@ -71,8 +184,9 @@
 }
 
 .tldr {
-  font-family: 'Quicksand';
+  font-family: 'FreightSansPro', 'Quicksand', sans-serif;
   font-size: 18px;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -95,7 +209,8 @@
 
 .publication-keywords {
   color: #14274e;
-  font-family: 'Quicksand';
+  font-family: 'FreightSansPro', 'Quicksand', sans-serif;
+  font-weight: 500;
 }
 
 
@@ -119,6 +234,10 @@
   margin-right: 0.1rem;
   margin-bottom: 0.5rem;
   transition: all 0.2s ease;
+  font-family: 'FreightSansPro';
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 18px;
 }
 
 .link-button:hover {
@@ -146,7 +265,8 @@
   margin: auto;
 }
 .normal-text {
-  font-family: 'Quicksand';
+  font-family: 'FreightSansPro', 'Quicksand', sans-serif;
+  font-weight: 400;
 }
 .caption {
   margin-top: -1.5rem
@@ -166,8 +286,8 @@
 }
 
 .viewer-label {
-  font-family: 'Quicksand';
-  font-weight: 600;
+  font-family: 'FreightSansPro', 'Quicksand', sans-serif;
+  font-weight: 500;
   font-size: 0.95rem;
   color: #363636;
   margin-bottom: 8px;
@@ -194,7 +314,7 @@
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   color: #14274e;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'FreightSansPro', 'Quicksand', sans-serif;
   font-weight: 600;
 }
 
@@ -206,11 +326,27 @@
   display: block;
 }
 
+/* On mobile, force non-full-size method images (e.g., inline max-width: 60%) to fill the column */
+@media (max-width: 768px) {
+  .method-image {
+    max-width: 100% !important;
+  }
+}
+
 .method-text {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'FreightSansPro', 'Quicksand', sans-serif;
+  font-weight: 400;
   font-size: 1.1rem;
   line-height: 1.6;
   color: #363636;
+}
+
+.method-text b,
+.method-text strong,
+.content b,
+.content strong {
+  font-family: 'FreightSansPro', 'Quicksand', sans-serif;
+  font-weight: 600;
 }
 
 /* Quicksand font supports 300, 400, 500, 600, 700 */

@@ -51,32 +51,32 @@
           <h1 class="title is-size-1 is-size-2-mobile publication-title">
             Image-Guided Geometric Stylization of 3D Meshes
           </h1>
-          <div class="is-size-5-tablet publication-institute">
+          <div class="is-4-tablet publication-journal">
             <span class="author-block">CVPR 2026</span>
           </div>
 
           <!-- authors -->
           <div class="container is-max-desktop has-text-centered author-list">
             <div class="columns is-mobile is-centered is-gapless is-multiline">
-              <div class="column is-3-tablet is-2-desktop is-size-6-tablet publication-authors">
+              <div class="column is-3-tablet is-2-desktop is-6-tablet publication-authors">
                 <a class="author-blocks" href="https://www.changwoon.info">Changwoon Choi*<sup>1</sup></a>
               </div>
-              <div class="column is-3-tablet is-2-desktop is-size-6-tablet publication-authors">
+              <div class="column is-3-tablet is-2-desktop is-6-tablet publication-authors">
                 <a class="author-blocks" href="https://scholar.google.com/citations?user=6JNXaH0AAAAJ&hl=en">Hyunsoo Lee*<sup>1</sup></a>
               </div>
-              <div class="column is-3-tablet is-2-desktop is-size-6-tablet publication-authors">
+              <div class="column is-3-tablet is-2-desktop is-6-tablet publication-authors">
                 <a class="author-blocks" href="https://clementjambon.github.io/">Cl&eacutement Jambon<sup>2</sup></a>
               </div>
-              <div class="column is-3-tablet is-2-desktop is-size-6-tablet publication-authors">
+              <div class="column is-3-tablet is-2-desktop is-6-tablet publication-authors">
                 <a class="author-blocks" href="https://yael-vinker.github.io/website/">Yael Vinker<sup>2</sup></a>
               </div>
-              <div class="column is-3-tablet is-2-desktop is-size-6-tablet publication-authors">
+              <div class="column is-3-tablet is-2-desktop is-6-tablet publication-authors">
                 <a class="author-blocks" href="http://3d.snu.ac.kr/members">Young Min Kim<sup>1 ✉</sup></a>
               </div>
             </div>
           </div>
 
-          <div class="is-size-6-tablet publication-institute">
+          <div class="is-6-tablet publication-institute">
             <span class="author-block" style="margin-right: 30px;"><sup>1</sup> Seoul National University</span>
             <span class="author-block"><sup>2</sup> MIT </span>
             <br />
@@ -100,25 +100,31 @@
 
           <!-- icons -->
           <div class="is-size-5 link-blocks">
-            <a class="button link-button is-rounded" href="https://dl.acm.org/doi/10.1145/3658156">
+            <a class="button link-button" href="./assets/paper/geostyle_cvpr_camready.pdf">
               <span class="icon">
                 <i class="fa-solid fa-file"></i>
               </span>
               <span>Paper</span>
             </a>
-            <a class="button link-button is-rounded" href="https://arxiv.org/abs/2402.03690">
+            <a class="button link-button" href="https://arxiv.org/abs/2604.07795">
               <span class="icon">
                 <i class="ai ai-arxiv"></i>
               </span>
               <span>arXiv</span>
             </a>
-            <a class="button disabled link-button is-rounded" href="">
+            <a class="button link-button" href="./assets/paper/geostyle.pptx">
+              <span class="icon">
+                <i class="fa-solid fa-file-powerpoint"></i>
+              </span>
+              <span>Slides</span>
+            </a>
+            <a class="button disabled link-button" href="">
               <span class="icon">
                 <i class="fa-brands fa-youtube"></i>
               </span>
               <span>Video</span>
             </a>
-            <a class="button disabled link-button is-rounded" href="https://github.com/changwoonchoi/3Doodle">
+            <a class="button disabled link-button" href="https://github.com/changwoonchoi/3Doodle">
               <span class="icon">
                 <i class="fab fa-github"></i>
               </span>
@@ -129,18 +135,19 @@
       </div>
     </section>
 
-    <!-- teasor -->
+    <!-- teaser -->
     <section class="hero">
       <div class="container is-max-desktop">
         <div class="hero-body">
           <img src="./assets/images/geostyle_web_teaser.png" width="100%" style="display: block; margin: auto" />
           <h2 class="tldr">
-            We propose a <span style="color: darkred; font-style: italic">geometric stylization</span> framework that deforms 
+            Given a <b>3D mesh</b> and <b>style reference images</b>, we transfer <span style="color: darkred; font-style: italic; font-weight: bold">geometric style</span> &mdash; poses, proportions, or distinctive geometric traits, while preserving the original mesh's topology and semantic identity.
           </h2>
         </div>
       </div>
     </section>
 
+    <!-- Abstract -->
     <section class="section">
       <div class="container is-max-desktop">
         <div class="column is-full-width is-centered has-text-centered has-text-left-mobile">
@@ -151,7 +158,7 @@
             <p>
               Recent generative models can create visually plausible 3D representations of objects.
               However, the generation process often allows for implicit control signals, such as contextual descriptions, and rarely supports bold geometric distortions beyond existing data distributions.
-              We propose a geometric stylization framework that deforms a 3D mesh, allowing it to express the style of an image. 
+              We propose a geometric stylization framework that deforms a 3D mesh, allowing it to express the style of an image.
               While style is inherently ambiguous, we utilize pre-trained diffusion models to extract an abstract representation of the provided image.
               Our coarse-to-fine stylization pipeline can drastically deform the input 3D model to express a diverse range of geometric variations while retaining the valid topology of the original mesh and part-level semantics.
               We also propose an approximate VAE encoder that provides efficient and reliable gradients from mesh renderings.
@@ -161,24 +168,43 @@
         </div>
       </div>
     </section>
-    <!--
+
+
+    <!-- Motivation -->
     <section class="section">
       <div class="container is-max-desktop">
-        <div class="column is full-width is-centered has-text-centered">
+        <div class="column is-full-width is-centered has-text-centered has-text-left-mobile">
           <h2 class="subtitle is-size-3 has-text-weight-medium publication-keywords">
-            Video (todo)
+            Style Transfer in 3D
           </h2>
-        </div>
-        <div class="publication-video">
-          <iframe
-            src="https://www.youtube.com/embed/7mWPYGRfk-I?si=x0xlB16kK1TOXN_I"
-            allow="autoplay; encrypted-media"
-            allowfullscreen="true"
-          ></iframe>
+          <div class="content has-text-justified method-text">
+            <p>
+              Following the success of 2D image style transfer, style transfer has been extended to 3D across various representations such as point clouds, meshes, NeRFs, and 3D Gaussian Splatting.
+              Most of these works, however, are focusing on transferring <b>high-frequency patch statistics</b> of colors and textures.
+              A parallel line of mesh-deformation methods does modify shape, but each minimizes a <b>hand-crafted energy function</b> tailored to a specific aesthetic (e.g., cubic stylization), and thus supports only a narrow class of styles.
+            </p>
+            <img src="./assets/images/3d_stylization_examples.png" class="method-image" style="max-width: 60%;" />
+            <p class="has-text-centered" style="margin-top: -1.0rem; font-size: 0.9rem; color: #666;">
+              Majority of style transfer methods in 3D focus on transferring high-frequency patch statistics of colors and textures.
+            </p>
+            <p>
+              <b>Style is not only about color or texture</b>.
+              What truly distinguishes an artistic 3D creation often lies in its <b>geometry</b>: the blocky facets of a cubic sculpture, the balloon-like proportions of an inflated toy, the elongated limbs of Bourgeois's spider, or the expressive pose of a figure.
+              Such traits are beyond the reach of patch statistics, and also resist unambiguous description through text.
+            </p>
+            <img src="./assets/images/style_examples.png" class="method-image" style="max-width: 60%;" />
+            <p class="has-text-centered" style="margin-top: -1.0rem; font-size: 0.9rem; color: #666;">
+              Geometric style goes beyond surface texture &mdash; cubic sculptures, balloon-like proportions, elongated spider limbs, and expressive poses all define style through geometry.
+            </p>
+            <p>
+              Our framework takes a <b>source 3D mesh</b> and <b>style reference images</b> as input, and deforms the mesh to reflect their geometric style.
+              The key idea is to use a <b>personalized diffusion model</b>, fine-tuned on the style reference images, as a <b>style-specific optimizer</b> that guides mesh deformation &mdash; covering a far broader range of styles than any hand-crafted energy can express.
+            </p>
+          </div>
         </div>
       </div>
     </section>
-    -->
+
     <section class="section">
       <div class="container is-max-desktop">
         <div class="column is-full-width is-centered has-text-centered">
@@ -189,20 +215,34 @@
         
         <div class="columns is-centered">
           <div class="column is-full-width">
-            <h3 class="title is-4 has-text-centered method-subsection-title">Pipeline Overview</h3>
-            
             <div class="content has-text-justified method-text">
               <p>
-                Our <b>geometric stylization</b> framework is composed of the following key stages:
+                Our <b>geometric stylization</b> framework takes a <b>source mesh</b> and <b>style reference images</b> as input, and deforms the mesh to exhibit the geometric style depicted in the images through a two-stage approach: <b>(1) style extraction</b> and <b>(2) mesh deformation</b>.
+              </p>
+              <p>
+                <img src="./assets/images/geostyle_web_method.png" width="100%" style="display: block; margin: auto" />
               </p>
               <ul>
-                <li><b>Stage 1:</b> Replace this with your first method step.</li>
-                <li><b>Stage 2:</b> Replace this with your second method step.</li>
-                <li><b>Stage 3:</b> Replace this with your third method step.</li>
+                <li><b>Stage 1: Geometric style extraction</b> 
+                We extract geometric style from style references by training LoRA weight using DreamBooth,
+                to capture both global shape and structural characteristics.</li>
+                <li><b>Stage 2: Mesh deformation</b><br/>
+                  <ul>
+                  <li>
+                    <b>Coarse deformation.</b>
+                    Using the pre-trained SDXL with an approximated VAE encoder, we compute SDS loss to induce large but semantically consistent deformations. 
+                    A cage-based deformation technique driven by an auxiliary mesh enables coarse structure changes.
+                    Deformation is optionally enhanced with symmetry regularization.
+                    <br/>
+                  </li>
+                  <li>
+                    <b>Fine deformation.</b>
+                    To refine fine-grained geometric details while preserving overall structure,
+                    we use additional stage without the cage-based deformation, also guided by SDS loss. 
+                  </li>
+                </ul>
+                </li>
               </ul>
-              <p>
-                (You can add <code style="background-color: transparent; padding: 0;">&lt;img src="./assets/images/your_method_image.png" class="method-image" /&gt;</code> here to include a method diagram.)
-              </p>
             </div>
           </div>
         </div>
@@ -265,14 +305,104 @@
     <section class="section">
       <div class="container is-max-desktop">
         <div class="column is-full-width is-centered has-text-centered">
-          <h2 class="subtitle is-size-3 has-text-weight-medium publication-keywords">Comparison with other methods</h2>
+          <h2 class="subtitle is-size-3 has-text-weight-medium publication-keywords">Comparison with Other Methods</h2>
         </div>
-        <div class="hero-body">
-          <img src="./assets/images/geostyle_web_baseline_comparison.png" width="100%" style="display: block; margin: auto" />
+        <div class="content has-text-justified method-text">
+          <p>
+            Our method achieves expressive geometric deformation, accurately reflecting
+            both coarse structure and fine detail from the style reference
+            while preserving the identity of source mesh,
+            baselines struggle to capture the intended geometry.
+          </p>
+          <img src="./assets/images/geostyle_web_baseline_comparison.png" class="method-image" />
         </div>
       </div>
     </section>
 
+    
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="column is-full-width is-centered has-text-centered">
+          <h2 class="subtitle is-size-3 has-text-weight-medium publication-keywords">Additional Results</h2>
+        </div>
+        <div class="content has-text-justified method-text">
+          <img src="./assets/images/geostyle_web_additional_result.png" class="method-image" />
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="column is-full-width is-centered has-text-centered">
+          <h2 class="subtitle is-size-3 has-text-weight-medium publication-keywords">Geometric Stylization with Text Condition</h2>
+        </div>
+        <div class="content has-text-justified method-text">
+          <p>
+            Our method can incorporate textual prompts alongside style reference images.
+            The resulting meshes align with the text-described contents while maintaining
+            the geometric style encoded in the style reference.
+          </p>
+          <img src="./assets/images/geostyle_web_text_condition.png" class="method-image" style="max-width: 60%;"/>
+        </div>
+      </div>
+    </section>
+
+    
+    
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="column is-full-width is-centered has-text-centered">
+          <h2 class="subtitle is-size-3 has-text-weight-medium publication-keywords">Localized Deformations</h2>
+        </div>
+        <div class="content has-text-justified method-text">
+          <p>
+            Our approach can transfer geometric style only to user-selected regions
+            while preserving the original shape elsewhere.
+          </p>
+          <img src="./assets/images/geostyle_web_local_deform.png" class="method-image" style="max-width: 70%"/>
+        </div>
+      </div>
+    </section>
+
+    
+    
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="column is-full-width is-centered has-text-centered">
+          <h2 class="subtitle is-size-3 has-text-weight-medium publication-keywords">Ablation Study</h2>
+        </div>
+        <div class="content has-text-justified method-text">
+          <p>
+            We analyze the effects of the approximated VAE encoder (1st row), cage-coefficient regularization (2nd) and symmetry loss (3rd).
+            The qualitative results show that each component is essential for producing high-fidelity stylization result.
+          </p>
+          <img src="./assets/images/geostyle_web_ablation_study.png" class="method-image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- References section -->
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="column is-full-width is-centered has-text-centered">
+          <h2 class="subtitle is-size-3 has-text-weight-medium publication-keywords">References</h2>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+             [1] Leon A. Gatys, Alexander S. Ecker, and Matthias Bethge. <i>Image Style Transfer Using Convolutional Neural Networks</i>. CVPR 2016.<br>
+             [2] Hiroharu Kato, Yoshitaka Ushiku, and Tatsuya Harada. <i>Neural 3D Mesh Renderer</i>. CVPR 2018.<br>
+             [3] Hsueh-Ti Derek Liu, Michael Tao, and Alec Jacobson. <i>Paparazzi: Surface Editing by Way of Multi-View Image Processing</i>. ACM TOG 2018.<br>
+             [4] Hsueh-Ti Derek Liu and Alec Jacobson. <i>Cubic Stylization</i>. ACM TOG 2019.<br>
+             [5] Lukas Höllein, Justin Johnson, and Matthias Nießner. <i>StyleMesh: Style Transfer for Indoor 3D Scene Reconstructions</i>. CVPR 2022.<br>
+             [6] Oscar Michel, Roi Bar-On, Richard Liu, Sagie Benaim, and Rana Hanocka. <i>Text2Mesh: Text-Driven Neural Stylization for Meshes</i>. CVPR 2022.<br>
+             [7] Kai Zhang, Nick Kolkin, Sai Bi, Fujun Luan, Zexiang Xu, Eli Shechtman, and Noah Snavely. <i>ARF: Artistic Radiance Fields</i>. ECCV 2022.<br>
+             [8] William Gao, Noam Aigerman, Thibault Groueix, Vladimir G. Kim, and Rana Hanocka. <i>TextDeformer: Geometry Manipulation Using Text Guidance</i>. SIGGRAPH 2023.<br>
+             [9] Hyunwoo Kim, Itai Lang, Noam Aigerman, Thibault Groueix, Vladimir G. Kim, and Rana Hanocka. <i>MeshUp: Multi-Target Mesh Deformation via Blended Score Distillation</i>. 3DV 2025.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- BibTex sectoion -->
     <section class="section">
@@ -280,9 +410,17 @@
         <div class="column is-full-width is-centered has-text-centered">
           <h2 class="subtitle is-size-3 has-text-weight-medium publication-keywords">BibTeX</h2>
         </div>
-        <div class="box bibtex-box">
-          <pre>
-          </pre>
+        <div class="box bibtex-box" id="bibtex-container" style="position: relative; cursor: pointer;" title="Click to copy">
+          <span id="copy-indicator" style="position: absolute; top: 10px; right: 10px; color: #4a4a4a; font-size: 0.85rem; display: flex; align-items: center; gap: 5px;">
+            <i class="far fa-copy"></i> Click to copy
+          </span>
+          <pre id="bibtex-content">
+@inproceedings{choi2026geostyle,
+  title={Image-Guided Geometric Stylization of 3D Meshes},
+  author={Choi, Changwoon and Lee, Hyunsoo and Jambon, Clément and Vinker, Yael and Kim, Young Min},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2026}
+}</pre>
         </div>
       </div>
     </section>
@@ -319,14 +457,58 @@
           <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"
             >Creative Commons Attribution-ShareAlike 4.0 International License</a
           >
-          <br/>
-          Template borrowed from <a href="https://changwoonchoi.github.io/3Doodle">3Doodle</a>.
         </p>
       </div>
     </footer>
 
     <!-- Interactive 3D Results -->
     <script type="module" src="./js/interactive_results.js"></script>
+    
+    <div id="copy-toast" style="display: none; position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 1000; background-color: rgba(50, 50, 50, 0.7); color: #fff; padding: 12px 24px; border-radius: 30px; font-size: 0.95rem; font-weight: 500; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); backdrop-filter: blur(4px); white-space: nowrap;">
+      <span style="color: #48c774; margin-right: 6px;"><i class="fas fa-check-circle"></i></span> BibTeX copied to clipboard!
+    </div>
+
+    <script>
+      function copyToClipboard(text) {
+        if (!navigator.clipboard) {
+          const textArea = document.createElement("textarea");
+          textArea.value = text;
+          textArea.style.top = "0";
+          textArea.style.left = "0";
+          textArea.style.position = "fixed";
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          try {
+            document.execCommand('copy');
+          } catch (err) {
+            console.error('Fallback: Oops, unable to copy', err);
+          }
+          document.body.removeChild(textArea);
+          return Promise.resolve();
+        }
+        return navigator.clipboard.writeText(text);
+      }
+
+      document.getElementById('bibtex-container').addEventListener('click', function() {
+        const bibtexText = document.getElementById('bibtex-content').innerText;
+        copyToClipboard(bibtexText).then(() => {
+          const indicator = document.getElementById('copy-indicator');
+          const originalHTML = '<i class="far fa-copy"></i> Click to copy';
+          indicator.innerHTML = '<i class="fas fa-check"></i> Copied!';
+          
+          const toast = document.getElementById('copy-toast');
+          toast.style.display = 'block';
+          
+          setTimeout(() => {
+            indicator.innerHTML = originalHTML;
+            toast.style.display = 'none';
+          }, 2000);
+        }).catch(err => {
+          console.error('Failed to copy: ', err);
+        });
+      });
+    </script>
   </body>
 
 </html>
