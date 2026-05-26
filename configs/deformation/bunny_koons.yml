@@ -1,0 +1,88 @@
+output_path: ./outputs/bunny_koons
+gpu: 0
+seed: 37
+
+# SDXL 
+sd_model: "xl_1.0"
+text_prompt: "A TOK style sculpture"
+grad_clamp_val: 2.
+cfg_scale: 100.
+use_half_precision: 1
+
+# Approximated VAE encoder
+approx_encoder: 1
+approx_encoder_type: linear+constant
+approx_encoder_path: null 
+num_latent_img_dataset: 500
+
+# LoRA
+lora_scale: 1
+lora_model: "./data/lora/koons_bluedog/pytorch_lora_weights.safetensors"
+
+# Mesh
+mesh: ./data/meshes/bunny.obj
+
+# Renderer settings
+envlight: "./materials/irrmaps/aerodynamics_workshop_2k.hdr"
+mtl: ./materials/diffuse_ivory.mtl
+bkg_color: "white"  # ["white", "gray", "black"] or aug_bkg = 1
+random_textures: 0
+optimize_textures: 0
+random_light_rotation_latent_img_dataset: 1
+random_light_rotation: 1
+num_envlight_rotations: 32
+
+# Optimization settings
+lr: 0.002
+epochs: 3600
+
+# Camera parameters
+train_res: 1024
+batch_size: 4
+fov_min: 30.0
+fov_max: 30.0
+dist_min: 5.0
+dist_max: 5.0
+elev_min: 10.0
+elev_max: 30.0
+elev_alpha: 1.0
+elev_beta: 5.0 
+azim_min: 0.0
+azim_max: 360.0
+aug_loc: 0
+aug_light: 0
+aug_bkg: 0
+adapt_dist: 1
+
+# logging
+log_interval: 5
+log_interval_im: 50
+log_elev: 30.0
+log_rot: 135.0
+log_dist: 6.0
+log_res: 512
+log_fov: 30.0
+log_vertex_color: 1
+
+# SDS loss
+sds_weight: 10.0
+
+# Jacobian regularization
+regularize_jacobians_weight: 0.001
+
+# Cage loss
+use_cage_loss: true
+cage_loss_weight: 1000
+segmented_label_path: "./data/segmentation/cluster_out/bunny/0_11.npy"
+cage_loss_epoch: 1000
+
+# Symmetry loss
+symmetry_loss_weight: 0.0
+
+# auxiliary mesh relaeted
+aux_lr: 0.0001
+aux_sds_weight: 1
+aux_symmetry_loss_weight: 0.0
+aux_sampling_method: "fps"
+aux_sampling_ratio: 0.5
+aux_sphere_radius: 0.03

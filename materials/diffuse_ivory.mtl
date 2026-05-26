@@ -1,0 +1,4 @@
+newmtl initialShadingGroup
+bsdf pbr
+Ks 0.00 1.00 0.00
+Kd 0.79 0.76 0.70
