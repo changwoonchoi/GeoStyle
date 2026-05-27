@@ -1,31 +1,32 @@
+<div align="center">
+
 # Image-Guided Geometric Stylization of 3D Meshes (CVPR 2026)
 
+[![Project Website](https://img.shields.io/badge/Project-Website-blue?style=for-the-badge&logo=Google%20Chrome&logoColor=white)](https://changwoonchoi.github.io/GeoStyle/)
+[![arXiv](https://img.shields.io/badge/arXiv-2604.07795-B31B1B.svg?style=for-the-badge)](https://arxiv.org/abs/2604.07795)
 
-#### [[Project Website]](https://changwoonchoi.github.io/GeoStyle/) [[arXiv]](https://arxiv.org/abs/2604.07795)
+**[Changwoon Choi](https://www.changwoon.info/)**\* · **[Hyunsoo Lee](https://scholar.google.com/citations?user=6JNXaH0AAAAJ&hl=en)**\* · **[Clément Jambon](https://clementjambon.github.io/)** · **[Yael Vinker](https://yael-vinker.github.io/website/)** · **[Young Min Kim](https://3d.snu.ac.kr/members/)**
 
+(\* Equal Contribution)
 
-[Changwoon Choi](https://www.changwoon.info/)\*, [Hyunsoo Lee](https://scholar.google.com/citations?user=6JNXaH0AAAAJ&hl=en)\*, [Clément Jambon](https://clementjambon.github.io/), [Yael Vinker](https://yael-vinker.github.io/website/), [Young Min Kim](https://3d.snu.ac.kr/members/)
+</div>
 
+<br/>
 
+![Teaser](assets/teaser.png)
 
+## 📋 Requirements
+* **OS:** Ubuntu 20.04 or higher
+* **GPU:** An NVIDIA GPU [compatible](https://docs.nvidia.com/deploy/cuda-compatibility/) with CUDA 11.8
+* **Environment:** Miniconda or Anaconda to manage Python virtual environments
+* **Compiler:** GCC 8 or higher
 
-## Requirements
-* Ubuntu 20.04 or higher
-* An NVIDIA GPU [compatible](https://docs.nvidia.com/deploy/cuda-compatibility/) with CUDA 11.8
-* Miniconda or Anaconda to manage Python virtual environments
-* GCC 8 or higher
-
-
-
-
-## Instructions
+## 🚀 Instructions
 Instructions are provided in separate files:
 * [Installation](docs/installation.md)
 * [Running the Code](docs/codebase.md)
 
-
-
-## Acknowledgements
+## 🙏 Acknowledgements
 
 This implementation is based on the following works:
 
@@ -35,14 +36,11 @@ This implementation is based on the following works:
 * [PartField](https://github.com/nv-tlabs/PartField)
 * [diffusers](https://github.com/huggingface/diffusers)
 
+We sincerely thank the authors for publicly sharing their repositories.
 
-We thank the authors for publicly sharing their repositories.
+## 🎓 Citation
 
-
-## Citation
-
-
-``` bibtex
+```bibtex
 @InProceedings{Choi_2026_CVPR,
     author    = {Choi, Changwoon and Lee, Hyunsoo and Jambon, Clément and Vinker, Yael and Kim, Young Min},
     title     = {Image-Guided Geometric Stylization of 3D Meshes},
