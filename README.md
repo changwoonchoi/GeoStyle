@@ -42,10 +42,12 @@ We sincerely thank the authors for publicly sharing their repositories.
 
 ```bibtex
 @InProceedings{Choi_2026_CVPR,
-    author    = {Choi, Changwoon and Lee, Hyunsoo and Jambon, Clément and Vinker, Yael and Kim, Young Min},
+    author    = {Choi, Changwoon and Lee, Hyunsoo and Jambon, Cl\'ement and Vinker, Yael and Kim, Young Min},
     title     = {Image-Guided Geometric Stylization of 3D Meshes},
-    booktitle = {CVPR},
-    year      = {2026}
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {19972-19981}
 }
 ```
 
