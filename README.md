@@ -5,7 +5,7 @@
 [![Project Website](https://img.shields.io/badge/Project-Website-blue?style=for-the-badge&logo=Google%20Chrome&logoColor=white)](https://changwoonchoi.github.io/GeoStyle/)
 [![arXiv](https://img.shields.io/badge/arXiv-2604.07795-B31B1B.svg?style=for-the-badge)](https://arxiv.org/abs/2604.07795)
 
-**[Changwoon Choi](https://www.changwoon.info/)**\* · **[Hyunsoo Lee](https://scholar.google.com/citations?user=6JNXaH0AAAAJ&hl=en)**\* · **[Clément Jambon](https://clementjambon.github.io/)** · **[Yael Vinker](https://yael-vinker.github.io/website/)** · **[Young Min Kim](https://3d.snu.ac.kr/members/)**
+**[Changwoon Choi](https://www.changwoon.info/)**\* · **[Hyunsoo Lee](https://hleephilip.github.io/)**\* · **[Clément Jambon](https://clementjambon.github.io/)** · **[Yael Vinker](https://yael-vinker.github.io/website/)** · **[Young Min Kim](https://3d.snu.ac.kr/members/)**
 
 (\* Equal Contribution)
 
